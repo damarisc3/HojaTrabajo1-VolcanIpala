@@ -6,7 +6,7 @@ Esta página web fue desarrollada utilizando HTML con el propósito de promocion
 
 ## Enlace del sitio web
 
-(Pega aquí el enlace de GitHub Pages cuando lo publiques).
+(https://damarisc3.github.io/HojaTrabajo1-VolcanIpala/)
 
 ## Desarrollado por
 

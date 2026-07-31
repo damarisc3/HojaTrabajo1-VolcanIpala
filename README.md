@@ -1,4 +1,4 @@
-##Hoja de Trabajo 2 — Mejoras aplicadas
+## Hoja de Trabajo 2 — Mejoras aplicadas
 
 En esta entrega se tomó el HTML de la Hoja de Trabajo 1 y se mejoró tanto a nivel de estructura como de estilos:
 

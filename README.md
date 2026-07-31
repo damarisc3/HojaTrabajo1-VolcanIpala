@@ -17,8 +17,8 @@ En esta entrega se tomó el HTML de la Hoja de Trabajo 1 y se mejoró tanto a ni
 - Diseño responsivo con media query para que la página se adapte correctamente a pantallas pequeñas (celulares).
 
 ## Sitio publicado
-https://volcan-ipala-ht2.netlify.app/
+Netlify: https://volcan-ipala-ht2.netlify.app/
 
-## Estudiante
+## Desarrollado Por
 
 Damaris Luz Marié Cabrera Carino

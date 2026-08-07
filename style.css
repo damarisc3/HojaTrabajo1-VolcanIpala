@@ -1,0 +1,319 @@
+/* ===== Estilos generales ===== */
+body {
+  font-family: Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #eaf4ec;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== Encabezado principal ===== */
+.hero {
+  background-image:
+    linear-gradient(rgba(31, 61, 43, 0.75), rgba(31, 61, 43, 0.75)),
+    url("https://i0.wp.com/passporterapp.com/es/blog/wp-content/uploads/2025/10/Volcan-Ipala-maravilla-clima-1024x819.webp?resize=1024%2C819&ssl=1");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero__subtitulo {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #f1e4c3;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Menú de navegación (índice) ===== */
+.indice {
+  background-color: #c9a24b;
+}
+
+.indice ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.indice li {
+  margin: 0 15px;
+}
+
+.indice a {
+  color: #1f3d2b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.indice a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contenedor principal y secciones ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.tarjeta h2 {
+  color: #1f3d2b;
+  border-bottom: 2px solid #c9a24b;
+  padding-bottom: 8px;
+}
+
+.subtexto {
+  font-style: italic;
+  color: #3a6b4a;
+}
+
+/* ===== Galería de imágenes ===== */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.galeria figure {
+  width: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  opacity: 0.85;
+}
+
+.galeria figcaption {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #3a6b4a;
+}
+
+/* ===== Tabla de itinerario ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #1f3d2b;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #e8f2e9;
+}
+
+tr:hover {
+  background-color: #f1e4c3;
+}
+
+/* ===== Lista de actividades ===== */
+.actividades {
+  padding-left: 20px;
+}
+
+.actividades li {
+  margin-bottom: 8px;
+}
+
+.actividades li::marker {
+  color: #c9a24b;
+}
+
+/* ===== Pie de página ===== */
+.pie {
+  background-color: #1f3d2b;
+  color: #c9e6cd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* ===== Diseño responsivo (pantallas pequeñas) ===== */
+@media (max-width: 600px) {
+  .galeria figure {
+    width: 100%;
+  }
+
+  .indice li {
+    margin: 5px 10px;
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+
+/* ===== Clase utilitaria para ocultar elementos ===== */
+.oculto {
+  display: none;
+}
+
+/* ===== Modal de la galería ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.oculto {
+  display: none;
+}
+
+.modal__contenido {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.modal__contenido img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.modal__contenido p:first-of-type {
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+.cerrar {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1f3d2b;
+}
+
+/* ===== Buscador de actividades ===== */
+#buscarActividad {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Formularios (cotización y reservación) ===== */
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+form input[type="number"],
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+form fieldset {
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+form fieldset label {
+  display: block;
+  font-weight: normal;
+  margin: 6px 0;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #1f3d2b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #3a6b4a;
+}
+
+#resultadoCotizacion,
+#mensajeReserva {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+#mensajeReserva.error {
+  color: #a33;
+}
+
+/* ===== Testimonios ===== */
+#testimonio {
+  font-style: italic;
+  margin: 15px 0;
+}
+
+#testimonioAutor {
+  font-style: normal;
+  font-weight: bold;
+  color: #3a6b4a;
+}

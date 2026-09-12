@@ -7,7 +7,6 @@ Página de la excursión al Volcán de Ipala hecha en React con Vite. Es la mism
 
 **Enlace del sitio publicado:** https://volcan-ipala-ht4.netlify.app/
 
-## Para correrlo
 ## Componentes
 
 Todos están en `src/components/`:

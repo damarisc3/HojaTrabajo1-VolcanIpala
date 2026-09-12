@@ -1,0 +1,343 @@
+/* =====================================================
+   Estilos de la página del Volcán de Ipala
+   Paleta:
+     verde oscuro  #1f3d2b
+     verde medio   #3a6b4a
+     dorado        #c9a24b
+     verde claro   #e8f2e9 (fondo, definido en index.css)
+   ===================================================== */
+
+/* ===== Encabezado (Header.jsx) ===== */
+.hero {
+  background-color: #1f3d2b;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 6px solid #c9a24b;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hero__subtitulo {
+  font-style: italic;
+  color: #e8f2e9;
+  margin: 10px 0 0;
+}
+
+/* ===== Contenedor principal y tarjetas ===== */
+.contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.tarjeta h2 {
+  color: #1f3d2b;
+  border-bottom: 2px solid #c9a24b;
+  padding-bottom: 8px;
+}
+
+.subtexto {
+  font-style: italic;
+  color: #3a6b4a;
+}
+
+/* ===== Descripción (Description.jsx) ===== */
+.datos {
+  padding-left: 20px;
+}
+
+.datos li::marker {
+  color: #c9a24b;
+}
+
+/* ===== Galería (Gallery.jsx) ===== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.galeria figure {
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.galeria figure:hover img {
+  border-color: #c9a24b;
+}
+
+.galeria figcaption {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #3a6b4a;
+}
+
+/* ===== Modal (Modal.jsx) ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.modal__contenido {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal__contenido img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.modal__contenido h3 {
+  color: #1f3d2b;
+  margin-bottom: 5px;
+}
+
+.modal__contenido p {
+  margin: 0;
+}
+
+.modal__cerrar {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #1f3d2b;
+}
+
+/* ===== Actividades (Activities.jsx) ===== */
+.buscador {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.actividades {
+  padding-left: 20px;
+}
+
+.actividades li {
+  margin-bottom: 8px;
+}
+
+.actividades li::marker {
+  color: #c9a24b;
+}
+
+.sin-resultados {
+  color: #a33;
+  font-style: italic;
+}
+
+/* ===== Formularios (Cotizador.jsx y ReservationForm.jsx) ===== */
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+form input[type="number"],
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form input:focus,
+form select:focus,
+.buscador:focus {
+  outline: 2px solid #3a6b4a;
+}
+
+form fieldset {
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+form fieldset legend {
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+/* etiquetas de los checkboxes */
+form .check {
+  font-weight: normal;
+  margin: 6px 0;
+}
+
+form .check input {
+  margin-right: 8px;
+}
+
+/* botones de toda la página */
+button[type="submit"],
+#opiniones button {
+  margin-top: 15px;
+  background-color: #1f3d2b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover,
+#opiniones button:hover {
+  background-color: #3a6b4a;
+}
+
+/* ===== Cotizador: resumen del precio ===== */
+.resumen {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: #e8f2e9;
+  border-left: 4px solid #c9a24b;
+  border-radius: 6px;
+}
+
+.resumen p {
+  margin: 4px 0;
+}
+
+.resumen .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+/* ===== Mensajes de error y confirmación ===== */
+.error {
+  color: #a33;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.confirmacion {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: #e8f2e9;
+  border-left: 4px solid #3a6b4a;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+/* ===== Testimonios (Testimonials.jsx) ===== */
+.testimonio {
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-left: 4px solid #c9a24b;
+  background-color: #e8f2e9;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+.testimonio p {
+  margin: 0 0 8px;
+}
+
+.testimonio footer {
+  font-style: normal;
+  font-weight: bold;
+  color: #3a6b4a;
+}
+
+/* ===== Pie de página (Footer.jsx) ===== */
+.pie {
+  background-color: #1f3d2b;
+  color: #e8f2e9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.pie p {
+  margin: 4px 0;
+}
+
+.pie__detalle {
+  font-size: 0.85rem;
+  color: #c9a24b;
+}
+
+/* ===== Diseño responsivo ===== */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .contenido {
+    padding: 10px;
+  }
+
+  .tarjeta {
+    padding: 18px;
+    margin: 20px 0;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria img {
+    height: 120px;
+  }
+}
